@@ -16,5 +16,10 @@
     "require": {
         "php": ">=5.3.3",
         "rwoverdijk/assetmanager": "1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
     }
 }
