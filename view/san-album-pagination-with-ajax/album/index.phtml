@@ -1,0 +1,27 @@
+<?php
+$this->headScript()->appendFile('/js/san-album-pagination-with-ajax/albumajax.js');
+
+$title = 'My albums';
+$this->headTitle($title);
+?>
+
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+<fieldset>
+<legend>Search</legend>
+<?php
+    $form = $this->form;
+    $form->setAttribute('action', $this->url('albumajax', array('action' => 'index')));
+    $form->setAttribute('class', 'form-inline');
+    $form->setAttribute('onsubmit', 'findAlbums(1);return false;');
+        
+    $form->get('keyword')->setAttribute('style', "width:300px;");
+    $form->prepare();
+    echo $this->form()->openTag($form);
+    echo $this->formCollection($form);
+    echo $this->form()->closeTag();
+?>
+</fieldset>
+<br />
+
+<div class="loader"></div>

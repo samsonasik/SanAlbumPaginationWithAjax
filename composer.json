@@ -1,0 +1,20 @@
+{
+    "name": "san/san-album-pagination-with-ajax",
+    "type": "library",
+    "description": "ZF2 Module that utilize Sample of Ajax in Album module using ViewJsonStrategy.",
+    "keywords": ["Ajax","zf2","Album"],
+    "homepage": "https://github.com/samsonasik/SanAlbumPaginationWithAjax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul Malik Ikhsan",
+            "email": "samsonasik@gmail.com",
+            "homepage": "http://samsonasik.wordpress.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "rwoverdijk/assetmanager": "1.*"
+    }
+}
