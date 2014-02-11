@@ -1,7 +1,7 @@
 Installation
 ------------
 
-1. Import Sql dump to your database
+~ Import Sql dump to your database
 ```
 --
 -- Table structure for table `album`
@@ -25,12 +25,12 @@ INSERT INTO `album` (`id`, `artist`, `title`) VALUES
 (3, 'Justin Timberlake', 'Love');
 ```
 
-2. Require it via composer command
+~ Require it via composer command
 ```
 composer require san/san-album-pagination-with-ajax
 ```
 
-3. Register to your config/application.config.php
+~ Register to your config/application.config.php
 
 ```php
 return array(
